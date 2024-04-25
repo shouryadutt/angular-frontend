@@ -12,7 +12,7 @@ def call(String imageName, String awsAccountId, String awsRegion) {
                             credentialsId: 'K8s',
                             secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
                         ]]) {
-                            sh 'aws ecr get-login-password --region eu-north-1 | docker login --username AWS --password-stdin 810678507647.dkr.ecr.eu-north-1.amazonaws.com'
+                            bat 'aws ecr get-login-password --region eu-north-1 | docker login --username AWS --password-stdin 810678507647.dkr.ecr.eu-north-1.amazonaws.com'
                         }
                     }
                 }
