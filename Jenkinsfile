@@ -1,3 +1,3 @@
 @Library('run') _
 
-buildAndPushDockerImage('angular-build', '810678507647', 'eu-north-1')
+run('angular-build', '810678507647', 'eu-north-1')
